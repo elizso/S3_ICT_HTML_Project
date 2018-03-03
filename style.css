@@ -109,14 +109,41 @@ div.designer{
 .personalFacts{
     background-color: rgba(197, 198, 199, 0.7);
     width: 100%;
-    overflow:auto;
+    margin: 0px;
+    height:35%;
+    bottom: 0px;
+    overflow: hidden;
 
 }
+
+
 .steveJobsGIF{
     float:right;
     top:0px;
-    height:30%;
-    
+    height:95%;    
+}
+.details{
+    background-color: rgba(31, 40, 51, 0.9);
+    width:100%;
+    color:#45a29e;
+    margin: 0px;
+    text-align: center;
+    overflow: hidden;
+
+}
+article{
+    width: 60%;
+    margin:5% 20%;
+    text-align: left;
+    background-color: rgba(11, 12, 16, 0.9);
+   
+}
+a.wiki{
+    font-size:16px;
+    width: 10%;
+}
+a.wiki:hover{
+    background-color: rgba(197, 198, 199, 0);
 }
 /*
 #0b0c10
