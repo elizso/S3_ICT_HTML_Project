@@ -145,6 +145,70 @@ a.wiki{
 a.wiki:hover{
     background-color: rgba(197, 198, 199, 0);
 }
+
+#slideshow{
+    width: 400px;
+    height: 300px;
+    border: 10px solid white ;
+    margin:0px auto;
+    
+}
+
+#divSlideshow{
+   width: 520px;
+   height: 320px;
+   margin: 75px auto;
+
+   
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 10px 2px;
+    background-color: #c5c6c7;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+.active, .dot:hover {
+    background-color: #1f2833;
+}
+
+.dots{
+    margin-top: 10px;
+    background-color: rgba(31, 40, 51, 0.7);
+    width: 80%;
+    margin: 0px auto;
+    height: 35px;
+}
+.arrow{
+    height:35px;
+    font-size: 30px;
+    width:15px;
+    text-align: center;
+    vertical-align: middle;
+    color: #66fcf1;
+    transition: color 0.6s ease;
+    position: relative;
+
+
+}
+.active, .arrow:hover {
+    color: #45a29e;
+
+}
+.caption{
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    background-color: rgba(11, 12, 16, 0.7);
+    height: 35px;
+    color: #66fcf1;
+}
+
 /*
 #0b0c10
 #1f2833

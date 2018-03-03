@@ -17,10 +17,60 @@
                    <a class=selected href="gallary.html">Gallery</a>
                 </div>
             </div>
-            <div>
-    
-            </div>
-            
-            
+            <div id="divSlideshow">
+                <div id="slideshow">
+                    <img id="photos" height=300px width=400px src="https://1zl13gzmcsu3l9yq032yyf51-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/jobs-3.jpg" alt="Steve Jobs">
+                </div>
+                
+                <div class="dots" style="text-align:center">
+                    <span style="float: left;"class="arrow" onclick="prevSlide()">&#10094;</span>
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span style="float: right;"class="arrow" onclick="nextSlide()">&#10095;</span>
+                </div>
+                <div class="caption">
+                    <h3 id="caption">Steve Jobs - Stay hungry, stay foolish.</h3>
+                </div>
+                
+                
+            </div>         
         </body>
+        <script>
+            var images = ["https://1zl13gzmcsu3l9yq032yyf51-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/jobs-3.jpg", "https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_2.0/c_limit,w_740/fl_lossy,q_auto/v1492185198/articles/2015/03/14/the-anti-steve-jobs-movie-alex-gibney-s-steve-jobs-man-in-the-machine/150313-stern-steve-jobs-tease_qmddrk", "https://img00.deviantart.net/d406/i/2015/096/8/b/classic_think_different_in_5k_by_howiedi2-d8onbnx.jpg"];
+            var caption = ["Steve Jobs - Stay hungry, stay foolish", "Steve Jobs and iPhone 4", "Apple's logo and motto"]
+            var index = 0;
+            function currentSlide(i){
+                document.getElementById("photos").src=images[i-1];
+                document.getElementById("caption").innerHTML=caption[i-1];
+                index = i-1;
+            }
+            function prevSlide(){
+                if (index == 0){
+                    document.getElementById("photos").src=images[2];
+                    document.getElementById("caption").innerHTML=caption[2];
+                    index = 2;
+                }else{
+                    index--;
+                    document.getElementById("photos").src=images[index];
+                    document.getElementById("caption").innerHTML=caption[index];
+                    
+                }
+                
+
+            }
+            function nextSlide(){
+                if (index == 2){
+                    document.getElementById("photos").src=images[0];
+                    document.getElementById("caption").innerHTML=caption[0];
+                    index = 0;
+                }else{
+                    index++;
+                    document.getElementById("photos").src=images[index];
+                    document.getElementById("caption").innerHTML=caption[index];
+                    
+                }
+                
+            }
+        </script>
     </HTML>
