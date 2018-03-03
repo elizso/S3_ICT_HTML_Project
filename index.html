@@ -1,0 +1,55 @@
+<HTML>
+    <head>
+        <title>Steve Jobs - home</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div class="header">
+            <div class="leftTopCorner">
+                <h1>Steve Jobs</h1>
+            </div>
+            
+            <div class="righttopcorner">
+               <a class=selected href="index.html">Home</a>
+               <a href="content.html">Information</a>
+               <a href="gallary.html">Gallery</a>
+            </div>
+        </div>        
+        <div class="image">
+                <h1>Steve Jobs</h1>
+                <img  src="https://us-east-1.tchyn.io/snopes-production/uploads/2015/11/steve-jobs.jpg" alt="Steve Jobs holding an iPhone" style="width:50%"/>
+        </div>
+        <div class="outerQuote">
+            <h1 style="color: #45a29e; text-align: center;">Quotes</h1>
+            <div class="quote">
+                <div class="innerQuote">
+                    <h2 class="quote" id="quote">Innovation distinguishes between a leader and a follower.</h2>
+                    <h3 style="text-align: right">- Steve Jobs</h3>
+                    <button id="randomQuote" onclick="randomQuote()">Change the quote</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="designer">
+            <h1>Desinger details</h1>
+            <ul>
+                <li>Name: Eliz So</li>
+                <li>Class: S3CL</li>
+                <li>Class No.: 25</li>
+            </ul>
+
+        </div>
+            
+    </body>
+    <script>
+        var quotes = ["Innovation distinguishes between a leader and a follower.", "Design is not just what it looks like and feels like. Design is how it works.", "It's not a faith in technology. It's a faith in people.", "Sometimes life hits you in the head with a brick. Don't lose faith.", "Great things in business are never done by one person. They're done by a team of people.", "Things don't have to change the world to be important."];
+        function randomQuote() {
+            
+            quote = quotes[Math.floor(Math.random()*quotes.length)];
+            document.getElementById("quote").innerHTML = quote;
+           
+        }
+    </script>
+</HTML>
