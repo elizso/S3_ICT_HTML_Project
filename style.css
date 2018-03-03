@@ -16,9 +16,42 @@ body{
     top:22.5px;
     right: 0%;
     height: 100%;
-    width: 40%;
-    display: inline;
+   
+    
 }
+.dropbtn{
+    width:150px;
+    text-align: center;
+}
+.dropdown-content{
+    background-color:#c5c6c7;
+    z-index: 1;
+    width: 100%;
+    left: 0px;
+    margin-top: 29.5px;
+    display: none;
+}
+.dropbtn:hover + .dropdown-content{
+    color: #1f2833;
+    display: block;
+   
+}
+.dropdown-content:hover{
+    color: #1f2833;
+    display: block;
+}
+.dropdown-content a{
+    color: #1f2833;
+    display: block;
+    width: 150px;
+    margin: 0;
+    padding: 5px 0px;
+    font-size: 18px;
+    height: 22%;
+}
+
+
+
 .leftTopCorner{
     position: absolute;
     left:1%;
@@ -29,15 +62,11 @@ a{
     width: 100px;
     font-size: 20px;
     margin: 0 0 0 0;
-    display: inline;
     text-decoration: none;
     padding: 29.5px 20px;
     text-align: center;
 }
-a.selected{
-    background-color:#c5c6c7;
-    color: #1f2833;
-}
+
 a:hover{
     color: #45a29e;
     background-color: #1f2833;
