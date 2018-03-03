@@ -209,6 +209,21 @@ a.wiki:hover{
     color: #66fcf1;
 }
 
+.video{
+    margin:75px auto;
+    width: 560px;
+    text-align: center;
+
+}
+.outerVideo{
+    width: 100%;
+    background-color: rgba(197, 198, 199, 0.7);
+    height: 370px;
+}
+.vidTitle{
+    margin-top: 5px;
+    height: 20px;
+}
 /*
 #0b0c10
 #1f2833
