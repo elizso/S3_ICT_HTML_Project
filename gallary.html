@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <HTML>
         <head>
             <title>Steve Jobs - gallary</title>
@@ -48,6 +49,23 @@
             var images = ["https://1zl13gzmcsu3l9yq032yyf51-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/jobs-3.jpg", "https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_2.0/c_limit,w_740/fl_lossy,q_auto/v1492185198/articles/2015/03/14/the-anti-steve-jobs-movie-alex-gibney-s-steve-jobs-man-in-the-machine/150313-stern-steve-jobs-tease_qmddrk", "https://img00.deviantart.net/d406/i/2015/096/8/b/classic_think_different_in_5k_by_howiedi2-d8onbnx.jpg"];
             var caption = ["Steve Jobs - Stay hungry, stay foolish", "Steve Jobs and iPhone 4", "Apple's logo and motto"]
             var index = 0;
+            
+            autoSlides();
+
+            function autoSlides() {
+                var slides = document.getElementById("photos");
+                document.getElementById("caption").innerHTML=caption[index];
+                slides.src=images[index];
+                if (index >= images.length-1){
+                    index = 0;
+                } else{
+                    index++;
+                }
+                
+                
+
+                setTimeout(autoSlides, 2000); // Change image every 2 seconds
+            }
             function currentSlide(i){
                 document.getElementById("photos").src=images[i-1];
                 document.getElementById("caption").innerHTML=caption[i-1];
